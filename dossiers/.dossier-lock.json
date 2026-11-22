@@ -339,7 +339,7 @@
           "specs": [
             "Makefile:11-16"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "Makefile": {
               "path": "Makefile",
@@ -359,7 +359,7 @@
           "specs": [
             "Makefile:1-9"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "Makefile": {
               "path": "Makefile",
@@ -379,7 +379,7 @@
           "specs": [
             "Makefile:25-26"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "Makefile": {
               "path": "Makefile",
@@ -399,7 +399,7 @@
           "specs": [
             "Makefile:18-23"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "Makefile": {
               "path": "Makefile",
@@ -420,7 +420,7 @@
             "Makefile:28-33",
             "scripts/render-demo.py:1-10"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "Makefile": {
               "path": "Makefile",
@@ -451,7 +451,7 @@
             "CONTRIBUTING.md:34-40",
             "internal/cli/cli_test.go:89-107"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "CONTRIBUTING.md": {
               "path": "CONTRIBUTING.md",
@@ -481,7 +481,7 @@
           "specs": [
             "scripts/gen-demo-fixture.py:1-10"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "scripts/gen-demo-fixture.py": {
               "path": "scripts/gen-demo-fixture.py",
@@ -502,7 +502,7 @@
             "go.mod",
             "Makefile:11-12"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "go.mod": {
               "path": "go.mod",
@@ -527,7 +527,7 @@
           "specs": [
             ".github/workflows/ci.yml:25-43"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             ".github/workflows/ci.yml": {
               "path": ".github/workflows/ci.yml",
@@ -548,7 +548,7 @@
             "main.go",
             "internal/kit/kit_test.go:1-4"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "main.go": {
               "path": "main.go",
@@ -574,7 +574,7 @@
             "CONTRIBUTING.md:17",
             "go.mod"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "CONTRIBUTING.md": {
               "path": "CONTRIBUTING.md",
@@ -599,7 +599,7 @@
           "specs": [
             "CONTRIBUTING.md:19"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "CONTRIBUTING.md": {
               "path": "CONTRIBUTING.md",
@@ -621,7 +621,7 @@
             "internal/discover/types.go:64-67",
             "internal/discover/types.go:97-99"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "CONTRIBUTING.md": {
               "path": "CONTRIBUTING.md",
@@ -662,7 +662,7 @@
             "internal/discover/env.go:15",
             "internal/discover/env.go:44-51"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/discover/env.go": {
               "path": "internal/discover/env.go",
@@ -693,7 +693,7 @@
             "internal/check/check.go:1-2",
             "internal/check/check.go:14-19"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/check/check.go": {
               "path": "internal/check/check.go",
@@ -723,7 +723,7 @@
           "specs": [
             "internal/cli/cli.go:28-33"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/cli/cli.go": {
               "path": "internal/cli/cli.go",
@@ -744,7 +744,7 @@
             "internal/report/json.go:12-14",
             "docs/json.md:3"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/report/json.go": {
               "path": "internal/report/json.go",
@@ -774,7 +774,7 @@
           "specs": [
             "CONTRIBUTING.md:51"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "CONTRIBUTING.md": {
               "path": "CONTRIBUTING.md",
@@ -795,7 +795,7 @@
             "CONTRIBUTING.md:45",
             ".github/scripts/automerge-eligible.mjs"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "CONTRIBUTING.md": {
               "path": "CONTRIBUTING.md",
@@ -820,7 +820,7 @@
           "specs": [
             "internal/kit/kit_test.go:93-125"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/kit/kit_test.go": {
               "path": "internal/kit/kit_test.go",
@@ -834,13 +834,13 @@
             }
           }
         },
-        "c3855174cd5c": {
-          "text": "That test also keeps the public files free of em dashes, `/home/`, `gmail` and `Co-Authored-By`; the list of files it scans is in the test, so a new public d...",
+        "ed5442c2bd87": {
+          "text": "That test also scans a fixed list of public files, including `dossiers/.dossier-lock.json`, for em dashes, absolute home-directory paths, a personal mail dom...",
           "line": 41,
           "specs": [
             "internal/kit/kit_test.go:371-398"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/kit/kit_test.go": {
               "path": "internal/kit/kit_test.go",
@@ -862,7 +862,7 @@
             ".github/rulesets/main.json",
             "internal/kit/kit_test.go:213-280"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             ".github/workflows/ci.yml": {
               "path": ".github/workflows/ci.yml",
@@ -897,7 +897,7 @@
           "specs": [
             "internal/kit/kit_test.go:410-428"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/kit/kit_test.go": {
               "path": "internal/kit/kit_test.go",
@@ -917,7 +917,7 @@
           "specs": [
             "internal/cli/cli_test.go:89-107"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/cli/cli_test.go": {
               "path": "internal/cli/cli_test.go",
@@ -937,7 +937,7 @@
           "specs": [
             "demo/demo.go:9-10"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "demo/demo.go": {
               "path": "demo/demo.go",
@@ -958,7 +958,7 @@
             "internal/cli/cli.go:132-134",
             ".github/workflows/ci.yml:31-35"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/cli/cli.go": {
               "path": "internal/cli/cli.go",
@@ -989,7 +989,7 @@
             "internal/discover/systemd.go:20-28",
             "internal/discover/env.go:32-42"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/discover/systemd.go": {
               "path": "internal/discover/systemd.go",
@@ -1021,7 +1021,7 @@
             "internal/cli/cli.go:236-248",
             "SECURITY.md:11"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/probe/probe.go": {
               "path": "internal/probe/probe.go",
@@ -1062,7 +1062,7 @@
             "internal/cli/cli.go:267-269",
             "internal/cli/cli_test.go:269-290"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "internal/cli/cli.go": {
               "path": "internal/cli/cli.go",
@@ -1096,7 +1096,7 @@
             "action.yml:44",
             "install.sh:7"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             "go.mod": {
               "path": "go.mod",
@@ -1153,7 +1153,7 @@
             "internal/cli/cli.go:25-26",
             "internal/cli/cli.go:91-100"
           ],
-          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
           "files": {
             ".goreleaser.yml": {
               "path": ".goreleaser.yml",
@@ -1188,8 +1188,8 @@
           }
         }
       },
-      "pinnedAt": "2026-11-22T10:14:39.654Z",
-      "head": "f9a4a3c58966cc9de43e1957b99295d023780696"
+      "pinnedAt": "2026-11-22T10:14:59.664Z",
+      "head": "1e4bb933310951257c3ecdf38913361dc8a59f10"
     },
     "unlisted-architecture": {
       "claims": {
