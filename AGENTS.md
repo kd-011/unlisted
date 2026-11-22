@@ -38,7 +38,7 @@ The doc index is docs/README.md. Read docs/ARCHITECTURE.md before changing struc
 ## Traps
 
 - `internal/kit/kit_test.go` checks the maintenance files: workflows must pin third-party actions by SHA, declare `permissions`, and never expand untrusted text. <!-- src: internal/kit/kit_test.go:93-125 -->
-- That test also keeps the public files free of em dashes, `/home/`, `gmail` and `Co-Authored-By`; the list of files it scans is in the test, so a new public doc is not covered unless added there. <!-- src: internal/kit/kit_test.go:371-398 -->
+- That test also scans a fixed list of public files, including `dossiers/.dossier-lock.json`, for em dashes, absolute home-directory paths, a personal mail domain and co-author trailers. The lock stores the text of every pinned claim, so the same words in a pinned doc fail it, and a new public doc is not covered unless added to the list. <!-- src: internal/kit/kit_test.go:371-398 -->
 - The ruleset on `main` requires the CI job name `go test (ubuntu-latest, go 1.22)`; renaming the job without editing `.github/rulesets/main.json` fails a test. <!-- src: .github/workflows/ci.yml:18, .github/rulesets/main.json, internal/kit/kit_test.go:213-280 -->
 - `dossiers/unlisted.md` must keep between 5 and 15 cited claims and its lock must pin exactly that many. <!-- src: internal/kit/kit_test.go:410-428 -->
 - `docs/demo.txt` is compared byte for byte with the demo report, so any change to report wording, order or counts fails `TestDemoReportMatchesDocs` until the golden file is regenerated. <!-- src: internal/cli/cli_test.go:89-107 -->
