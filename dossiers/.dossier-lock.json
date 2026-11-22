@@ -330,6 +330,2680 @@
       },
       "pinnedAt": "2026-11-03T07:40:39.427Z",
       "head": "9558a659ab628ba3d215f4f08b2b610256a2b160"
+    },
+    "unlisted-agents": {
+      "claims": {
+        "f4ff66edaaa7": {
+          "text": "`make test` runs `go vet ./...`, then `go test -race ./...` with cgo switched back on for the race detector.",
+          "line": 15,
+          "specs": [
+            "Makefile:11-16"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 11,
+                "end": 16,
+                "hash": "500c989f47f0064fd91e97415cf3678044f59e55"
+              }
+            }
+          }
+        },
+        "edf5a1e52a5b": {
+          "text": "`make build` writes a static `./unlisted` (`CGO_ENABLED=0`, version from `git describe`).",
+          "line": 16,
+          "specs": [
+            "Makefile:1-9"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 1,
+                "end": 9,
+                "hash": "c38e8703e29388d327c73ad518432bd4592b1ca1"
+              }
+            }
+          }
+        },
+        "ab3d08806d4d": {
+          "text": "`make demo` builds, then runs `unlisted demo`.",
+          "line": 17,
+          "specs": [
+            "Makefile:25-26"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 25,
+                "end": 26,
+                "hash": "54c20320c51d3f37ed4b91866986518d55c0eafd"
+              }
+            }
+          }
+        },
+        "cc6def2c344d": {
+          "text": "`make dist` cross-compiles linux/amd64, linux/arm64 and darwin/arm64 into `dist/` with a `checksums.txt`.",
+          "line": 18,
+          "specs": [
+            "Makefile:18-23"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 18,
+                "end": 23,
+                "hash": "7514286a11f729a60913135be179375136a6ce1f"
+              }
+            }
+          }
+        },
+        "e21334972871": {
+          "text": "`make screenshot` regenerates `docs/demo.png` and `docs/demo-hero.png` from `unlisted demo`; it needs `python3` with Pillow.",
+          "line": 19,
+          "specs": [
+            "Makefile:28-33",
+            "scripts/render-demo.py:1-10"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 28,
+                "end": 33,
+                "hash": "1bebdfd13d3d6eefae87a8738a4183aac37fab88"
+              }
+            },
+            "scripts/render-demo.py": {
+              "path": "scripts/render-demo.py",
+              "blob": "4396bc4ab341d45fb680ef383d99610671e1b1e5",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 1,
+                "end": 10,
+                "hash": "1f7af633aef8965a6ba677123113f8b84e0347a9"
+              }
+            }
+          }
+        },
+        "eb50bfa4f1fe": {
+          "text": "After a deliberate change to the demo report, run `UPDATE_GOLDEN=1 go test ./internal/cli -run Demo` to rewrite `docs/demo.txt`.",
+          "line": 20,
+          "specs": [
+            "CONTRIBUTING.md:34-40",
+            "internal/cli/cli_test.go:89-107"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "CONTRIBUTING.md": {
+              "path": "CONTRIBUTING.md",
+              "blob": "eafac68a70a187464bfca5472a16d43f7a105e97",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 34,
+                "end": 40,
+                "hash": "42c65230916f57d53559d8a3a86968343b66daf4"
+              }
+            },
+            "internal/cli/cli_test.go": {
+              "path": "internal/cli/cli_test.go",
+              "blob": "734d011bea8f7c2dceee1156d497e3babc8c6068",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 89,
+                "end": 107,
+                "hash": "96ab7a4efa1acf3adcd310368675129d60f92910"
+              }
+            }
+          }
+        },
+        "972f30db0549": {
+          "text": "To change the fake `/proc` tree or Docker listing under `demo/`, edit `scripts/gen-demo-fixture.py` and run `python3 scripts/gen-demo-fixture.py demo`.",
+          "line": 21,
+          "specs": [
+            "scripts/gen-demo-fixture.py:1-10"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "scripts/gen-demo-fixture.py": {
+              "path": "scripts/gen-demo-fixture.py",
+              "blob": "496f72c70b572320b1c26dc91137f26148f221a1",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 1,
+                "end": 10,
+                "hash": "43a8382ec53b72eedec1a73bf625197890891090"
+              }
+            }
+          }
+        },
+        "766e5c4a6667": {
+          "text": "Go 1.22 is the floor; there is no lint or format step beyond `go vet`.",
+          "line": 22,
+          "specs": [
+            "go.mod",
+            "Makefile:11-12"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "go.mod": {
+              "path": "go.mod",
+              "blob": "75424776b371a5188134470e0d1a398427b0b4bf",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9"
+            },
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 11,
+                "end": 12,
+                "hash": "1e2df2a487076930751db4e29167bf44ee2a9939"
+              }
+            }
+          }
+        },
+        "a025345ec408": {
+          "text": "CI runs vet, race tests, a static build, the demo, `shellcheck install.sh` and `make dist`.",
+          "line": 23,
+          "specs": [
+            ".github/workflows/ci.yml:25-43"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            ".github/workflows/ci.yml": {
+              "path": ".github/workflows/ci.yml",
+              "blob": "bccaa59803db7ce2281b9897d1e8367cb59dca6d",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 25,
+                "end": 43,
+                "hash": "30b58d7eea035d447375af71614a0556649dc0a3"
+              }
+            }
+          }
+        },
+        "47ff256bcf04": {
+          "text": "Layout: `main.go` calls `internal/cli`; the other packages are `registry`, `discover`, `check`, `probe`, `report`, `adopt`, plus `internal/kit` for maintenan...",
+          "line": 27,
+          "specs": [
+            "main.go",
+            "internal/kit/kit_test.go:1-4"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "main.go": {
+              "path": "main.go",
+              "blob": "662eda3223cffc78d4cb30c24618c7e370875448",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9"
+            },
+            "internal/kit/kit_test.go": {
+              "path": "internal/kit/kit_test.go",
+              "blob": "daa8dd8433ab8dc713d9429a6170c6f852bccb6a",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 4,
+                "hash": "c18c1b373f539261745cfaab01ce1f0b8e793746"
+              }
+            }
+          }
+        },
+        "63f05ff90b76": {
+          "text": "Standard library first. The only dependency is `gopkg.in/yaml.v3`, and a new one needs a reason.",
+          "line": 28,
+          "specs": [
+            "CONTRIBUTING.md:17",
+            "go.mod"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "CONTRIBUTING.md": {
+              "path": "CONTRIBUTING.md",
+              "blob": "eafac68a70a187464bfca5472a16d43f7a105e97",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 17,
+                "end": 17,
+                "hash": "e3e649caecb5a551e14203ee34f480fa3ad8b895"
+              }
+            },
+            "go.mod": {
+              "path": "go.mod",
+              "blob": "75424776b371a5188134470e0d1a398427b0b4bf",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9"
+            }
+          }
+        },
+        "bef930b8a1ea": {
+          "text": "Tests never read the real machine: they use fixtures under `testdata/` and `demo/` through `--config-root`. Do not add a test that reads `/etc` or `/proc`.",
+          "line": 29,
+          "specs": [
+            "CONTRIBUTING.md:19"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "CONTRIBUTING.md": {
+              "path": "CONTRIBUTING.md",
+              "blob": "eafac68a70a187464bfca5472a16d43f7a105e97",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 19,
+                "end": 19,
+                "hash": "ae50aabf8cd59514a64a477c8c9adb18f4660feb"
+              }
+            }
+          }
+        },
+        "94e90e2d6f7d": {
+          "text": "A new discovery source is one file in `internal/discover` implementing `Source`, a fixture under `testdata/`, a parser test, and an entry in `AllSources`.",
+          "line": 30,
+          "specs": [
+            "CONTRIBUTING.md:21-33",
+            "internal/discover/types.go:64-67",
+            "internal/discover/types.go:97-99"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "CONTRIBUTING.md": {
+              "path": "CONTRIBUTING.md",
+              "blob": "eafac68a70a187464bfca5472a16d43f7a105e97",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 21,
+                "end": 33,
+                "hash": "49753ab9c5d074fbf1f0bf66fbd3316861f2ba12"
+              }
+            },
+            "internal/discover/types.go": {
+              "path": "internal/discover/types.go",
+              "blob": "65048ee6819be92a878ef7141fe2d732058a8f4b",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 64,
+                "end": 67,
+                "hash": "f8d4941eb68558c08e638b666b81c82a51bdb5f6"
+              }
+            },
+            "internal/discover/types.go:97-99": {
+              "path": "internal/discover/types.go",
+              "blob": "65048ee6819be92a878ef7141fe2d732058a8f4b",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 97,
+                "end": 99,
+                "hash": "a76df8259968bbbc022b4d4cbc2572a12fd43ebd"
+              }
+            }
+          }
+        },
+        "fb552d386c86": {
+          "text": "Source paths go through `env.resolve` so `--config-root` works; explicit path flags are literal and are not prefixed with the root.",
+          "line": 31,
+          "specs": [
+            "internal/discover/env.go:15",
+            "internal/discover/env.go:44-51"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/discover/env.go": {
+              "path": "internal/discover/env.go",
+              "blob": "ac7c40f2966be156535913e6cd35f09ea285514a",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 15,
+                "end": 15,
+                "hash": "82c42877933d3d83817e2f596d59cbec433475a1"
+              }
+            },
+            "internal/discover/env.go:44-51": {
+              "path": "internal/discover/env.go",
+              "blob": "ac7c40f2966be156535913e6cd35f09ea285514a",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 44,
+                "end": 51,
+                "hash": "6f1b60420a88843db6c3ff0729ad5b6a68909e9f"
+              }
+            }
+          }
+        },
+        "0818242e5d7d": {
+          "text": "`internal/check` does no I/O: it takes a registry and a snapshot and returns findings.",
+          "line": 32,
+          "specs": [
+            "internal/check/check.go:1-2",
+            "internal/check/check.go:14-19"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/check/check.go": {
+              "path": "internal/check/check.go",
+              "blob": "bdfc834aa3dd9cca048be4b129822a590cc42ccd",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 2,
+                "hash": "b9df22795c8abd00cefbca62afe4d300102b5f38"
+              }
+            },
+            "internal/check/check.go:14-19": {
+              "path": "internal/check/check.go",
+              "blob": "bdfc834aa3dd9cca048be4b129822a590cc42ccd",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 14,
+                "end": 19,
+                "hash": "d35ee25f862db35c6ed85cd2fcd7c27e18b3da8a"
+              }
+            }
+          }
+        },
+        "1d378ffac17b": {
+          "text": "Exit codes are part of the interface: 0 clean, 1 findings matching `--fail-on`, 2 error.",
+          "line": 33,
+          "specs": [
+            "internal/cli/cli.go:28-33"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 28,
+                "end": 33,
+                "hash": "3a75c337dbd4a041e024762bf4f179ec4d9fcfbc"
+              }
+            }
+          }
+        },
+        "5f74d59f002c": {
+          "text": "The JSON schema is `unlisted/v1`: it changes only when a field is removed or changes meaning, and new optional fields are allowed.",
+          "line": 34,
+          "specs": [
+            "internal/report/json.go:12-14",
+            "docs/json.md:3"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/report/json.go": {
+              "path": "internal/report/json.go",
+              "blob": "6e0e8fce5aa77d8cf91d1c7b94d993fc9f18e652",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 12,
+                "end": 14,
+                "hash": "bb4d411619b29ba28b07762d55487e8dacf7a3cd"
+              }
+            },
+            "docs/json.md": {
+              "path": "docs/json.md",
+              "blob": "1595d6d1b59b51eb90598b2a206862fe49c73aae",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 3,
+                "end": 3,
+                "hash": "21f691490f905e90a61f7c6eb7ac692a2a988973"
+              }
+            }
+          }
+        },
+        "2daeeea0f544": {
+          "text": "Comments say why the code does something. No emoji and no em dashes in code, comments or docs. Keep commits small.",
+          "line": 35,
+          "specs": [
+            "CONTRIBUTING.md:51"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "CONTRIBUTING.md": {
+              "path": "CONTRIBUTING.md",
+              "blob": "eafac68a70a187464bfca5472a16d43f7a105e97",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 51,
+                "end": 51,
+                "hash": "d6f3ef5b7614547d5b312386e6c59eee2b4c453b"
+              }
+            }
+          }
+        },
+        "ad86351b4026": {
+          "text": "Dependabot patch and minor Go updates, and any `actions/` update, merge on their own after CI; other majors wait for a person.",
+          "line": 36,
+          "specs": [
+            "CONTRIBUTING.md:45",
+            ".github/scripts/automerge-eligible.mjs"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "CONTRIBUTING.md": {
+              "path": "CONTRIBUTING.md",
+              "blob": "eafac68a70a187464bfca5472a16d43f7a105e97",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 45,
+                "end": 45,
+                "hash": "aeaeae6d5444754fa803af1c89798ad093f548df"
+              }
+            },
+            ".github/scripts/automerge-eligible.mjs": {
+              "path": ".github/scripts/automerge-eligible.mjs",
+              "blob": "74eb54391e2d15b19c746b6abb8eea04d633e8f8",
+              "commit": "274cdc2168d7d80dc5519d3c64ccf844a13c00c2"
+            }
+          }
+        },
+        "3e534ce46227": {
+          "text": "`internal/kit/kit_test.go` checks the maintenance files: workflows must pin third-party actions by SHA, declare `permissions`, and never expand untrusted text.",
+          "line": 40,
+          "specs": [
+            "internal/kit/kit_test.go:93-125"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/kit/kit_test.go": {
+              "path": "internal/kit/kit_test.go",
+              "blob": "daa8dd8433ab8dc713d9429a6170c6f852bccb6a",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 93,
+                "end": 125,
+                "hash": "340c1bcf69a72cf373b51290afe5d58f780baa04"
+              }
+            }
+          }
+        },
+        "ed5442c2bd87": {
+          "text": "That test also scans a fixed list of public files, including `dossiers/.dossier-lock.json`, for em dashes, absolute home-directory paths, a personal mail dom...",
+          "line": 41,
+          "specs": [
+            "internal/kit/kit_test.go:371-398"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/kit/kit_test.go": {
+              "path": "internal/kit/kit_test.go",
+              "blob": "daa8dd8433ab8dc713d9429a6170c6f852bccb6a",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 371,
+                "end": 398,
+                "hash": "2d65cdeb37d0e3bf057498d53d7e02b5493393f5"
+              }
+            }
+          }
+        },
+        "3fe71069e4e1": {
+          "text": "The ruleset on `main` requires the CI job name `go test (ubuntu-latest, go 1.22)`; renaming the job without editing `.github/rulesets/main.json` fails a test.",
+          "line": 42,
+          "specs": [
+            ".github/workflows/ci.yml:18",
+            ".github/rulesets/main.json",
+            "internal/kit/kit_test.go:213-280"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            ".github/workflows/ci.yml": {
+              "path": ".github/workflows/ci.yml",
+              "blob": "bccaa59803db7ce2281b9897d1e8367cb59dca6d",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 18,
+                "end": 18,
+                "hash": "96ed4fecc65b357687036993095d1dd33b953715"
+              }
+            },
+            ".github/rulesets/main.json": {
+              "path": ".github/rulesets/main.json",
+              "blob": "4f244d58d8d677019b4136ee87966d7257f4a502",
+              "commit": "274cdc2168d7d80dc5519d3c64ccf844a13c00c2"
+            },
+            "internal/kit/kit_test.go": {
+              "path": "internal/kit/kit_test.go",
+              "blob": "daa8dd8433ab8dc713d9429a6170c6f852bccb6a",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 213,
+                "end": 280,
+                "hash": "e9eb40c0bd387043c1a051a22a4291f5d8073b7c"
+              }
+            }
+          }
+        },
+        "ab90ed2df572": {
+          "text": "`dossiers/unlisted.md` must keep between 5 and 15 cited claims and its lock must pin exactly that many.",
+          "line": 43,
+          "specs": [
+            "internal/kit/kit_test.go:410-428"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/kit/kit_test.go": {
+              "path": "internal/kit/kit_test.go",
+              "blob": "daa8dd8433ab8dc713d9429a6170c6f852bccb6a",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 410,
+                "end": 428,
+                "hash": "442caa43a0ee944263cb8c83fdb10de036ad8d77"
+              }
+            }
+          }
+        },
+        "75e65da3b956": {
+          "text": "`docs/demo.txt` is compared byte for byte with the demo report, so any change to report wording, order or counts fails `TestDemoReportMatchesDocs` until the ...",
+          "line": 44,
+          "specs": [
+            "internal/cli/cli_test.go:89-107"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/cli/cli_test.go": {
+              "path": "internal/cli/cli_test.go",
+              "blob": "734d011bea8f7c2dceee1156d497e3babc8c6068",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 89,
+                "end": 107,
+                "hash": "96ab7a4efa1acf3adcd310368675129d60f92910"
+              }
+            }
+          }
+        },
+        "085935569f75": {
+          "text": "`demo/` is embedded into the binary with `all:` patterns, so a new top-level folder under `demo/` needs the embed line extended or `unlisted demo` will not s...",
+          "line": 45,
+          "specs": [
+            "demo/demo.go:9-10"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "demo/demo.go": {
+              "path": "demo/demo.go",
+              "blob": "762d1f1708087058715f8d526a466a8a45a56410",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 9,
+                "end": 10,
+                "hash": "c02aba527ef9044a30f2c68221b2e79bebb1fc6a"
+              }
+            }
+          }
+        },
+        "686217de924e": {
+          "text": "`unlisted demo` exits 0 on purpose, while `unlisted check -f demo/registry.yml --config-root demo` exits 1; CI asserts the second.",
+          "line": 46,
+          "specs": [
+            "internal/cli/cli.go:132-134",
+            ".github/workflows/ci.yml:31-35"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 132,
+                "end": 134,
+                "hash": "dae62fca0c78f95a2f04114063e606b901df8570"
+              }
+            },
+            ".github/workflows/ci.yml": {
+              "path": ".github/workflows/ci.yml",
+              "blob": "bccaa59803db7ce2281b9897d1e8367cb59dca6d",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 31,
+                "end": 35,
+                "hash": "914c84c24f48338bb67ddd3fe0d076c59bca448e"
+              }
+            }
+          }
+        },
+        "83e24794bf3c": {
+          "text": "Under `--config-root` the systemd source reads `systemd/units.txt` instead of running `systemctl`, and the home directory is `/root`.",
+          "line": 47,
+          "specs": [
+            "internal/discover/systemd.go:20-28",
+            "internal/discover/env.go:32-42"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/discover/systemd.go": {
+              "path": "internal/discover/systemd.go",
+              "blob": "b52f77c216dca6356a3f3a0bb0d5cbf677a5a8f9",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 20,
+                "end": 28,
+                "hash": "6aaa663ea39f05b933096358015e46f69617831b"
+              }
+            },
+            "internal/discover/env.go": {
+              "path": "internal/discover/env.go",
+              "blob": "ac7c40f2966be156535913e6cd35f09ea285514a",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 32,
+                "end": 42,
+                "hash": "f166093025ee4e2a53cec6a63387a696884e5a64"
+              }
+            }
+          }
+        },
+        "9e9b56496c17": {
+          "text": "Only `--probe` touches the network, and it contacts registry hostnames only; keep it that way, since the README and SECURITY.md promise it.",
+          "line": 48,
+          "specs": [
+            "internal/probe/probe.go:1-3",
+            "internal/cli/cli.go:236-248",
+            "SECURITY.md:11"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/probe/probe.go": {
+              "path": "internal/probe/probe.go",
+              "blob": "189a9e1d4b70a81bea15d95974486f21f93c687f",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 3,
+                "hash": "847e8ea91aecd55e163a50c28347946050e70240"
+              }
+            },
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 236,
+                "end": 248,
+                "hash": "8d348073c2eee6d825baa2d7052e2e30b6696dba"
+              }
+            },
+            "SECURITY.md": {
+              "path": "SECURITY.md",
+              "blob": "d0549dcefabc6321319a70e73a37599d73ffe98a",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 11,
+                "end": 11,
+                "hash": "294faaff3361a21ae6c3e03022ed3801ae4c6202"
+              }
+            }
+          }
+        },
+        "9a97568cd6b7": {
+          "text": "Only `unlisted init` writes a file, and it refuses to overwrite one without `--force`.",
+          "line": 49,
+          "specs": [
+            "internal/cli/cli.go:267-269",
+            "internal/cli/cli_test.go:269-290"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 267,
+                "end": 269,
+                "hash": "cf875eea8de2e924c9ef8a4390e4338dcf729cf5"
+              }
+            },
+            "internal/cli/cli_test.go": {
+              "path": "internal/cli/cli_test.go",
+              "blob": "734d011bea8f7c2dceee1156d497e3babc8c6068",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 269,
+                "end": 290,
+                "hash": "a7199548683989f434a28656a0ef90acd9210573"
+              }
+            }
+          }
+        },
+        "e1c8aaddead0": {
+          "text": "The Go module path `github.com/kd-011/unlisted` appears in `go.mod`, imports, `Makefile`, `action.yml`, `.goreleaser.yml` and `install.sh`; a rename touches ...",
+          "line": 50,
+          "specs": [
+            "go.mod",
+            "Makefile:2",
+            ".goreleaser.yml:22",
+            "action.yml:44",
+            "install.sh:7"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            "go.mod": {
+              "path": "go.mod",
+              "blob": "75424776b371a5188134470e0d1a398427b0b4bf",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9"
+            },
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 2,
+                "end": 2,
+                "hash": "80d7afd0d886c6fb8aa31e0ff9cdde144826cdcc"
+              }
+            },
+            ".goreleaser.yml": {
+              "path": ".goreleaser.yml",
+              "blob": "e2c6edec99df2ed3876222e94f048e2edc395909",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 22,
+                "end": 22,
+                "hash": "d944a476d232243b8b837fddae3934681c22b85b"
+              }
+            },
+            "action.yml": {
+              "path": "action.yml",
+              "blob": "1d0ab8575f6e81dc9d9d0805758f2e4843858911",
+              "commit": "6fd8ed9832c07638e0c2daa873253565c1f65cea",
+              "range": {
+                "start": 44,
+                "end": 44,
+                "hash": "ede2fb3a6f2db627872c33b702e564dd4d0109cb"
+              }
+            },
+            "install.sh": {
+              "path": "install.sh",
+              "blob": "c87d06fd9a2cdcf5b33a7b6351f3036a784907a2",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 7,
+                "end": 7,
+                "hash": "e4ba0abdf7dee000a2591d71b73dfa4c754f66ea"
+              }
+            }
+          }
+        },
+        "961c5bbfb7fa": {
+          "text": "Releases carry no version file: goreleaser stamps `internal/cli.Version` from the tag at build time, and `go install` builds read it from build info.",
+          "line": 51,
+          "specs": [
+            ".goreleaser.yml:21-22",
+            "internal/cli/cli.go:25-26",
+            "internal/cli/cli.go:91-100"
+          ],
+          "head": "1e4bb933310951257c3ecdf38913361dc8a59f10",
+          "files": {
+            ".goreleaser.yml": {
+              "path": ".goreleaser.yml",
+              "blob": "e2c6edec99df2ed3876222e94f048e2edc395909",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 21,
+                "end": 22,
+                "hash": "db22fde66d7d8c3c84923d8ad1dc91999209e726"
+              }
+            },
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 25,
+                "end": 26,
+                "hash": "c5cff80bf360f0de48611258af82819fb9928d5c"
+              }
+            },
+            "internal/cli/cli.go:91-100": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 91,
+                "end": 100,
+                "hash": "34ac9416d6fecdad5959555375df49d2be885277"
+              }
+            }
+          }
+        }
+      },
+      "pinnedAt": "2026-11-22T10:14:59.664Z",
+      "head": "1e4bb933310951257c3ecdf38913361dc8a59f10"
+    },
+    "unlisted-architecture": {
+      "claims": {
+        "b689795a94d8": {
+          "text": "One static Go binary with a single dependency (`gopkg.in/yaml.v3`), built with `CGO_ENABLED=0`. It reads a YAML registry of what you say you run, reads what ...",
+          "line": 11,
+          "specs": [
+            "go.mod",
+            "Makefile:1-9"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "go.mod": {
+              "path": "go.mod",
+              "blob": "75424776b371a5188134470e0d1a398427b0b4bf",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9"
+            },
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 1,
+                "end": 9,
+                "hash": "c38e8703e29388d327c73ad518432bd4592b1ca1"
+              }
+            }
+          }
+        },
+        "c1ef9b6651ec": {
+          "text": "`main.go` only calls `cli.Run` and exits with its code.",
+          "line": 27,
+          "specs": [
+            "main.go:10-12"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "main.go": {
+              "path": "main.go",
+              "blob": "662eda3223cffc78d4cb30c24618c7e370875448",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 10,
+                "end": 12,
+                "hash": "fd4b234454e46859a41114b5662665be61d0e86f"
+              }
+            }
+          }
+        },
+        "9c7bf9a94d27": {
+          "text": "`internal/cli` parses flags and dispatches `check` (the default), `init`, `demo`, `version` and `help`; `Run` returns an exit code instead of exiting so ever...",
+          "line": 28,
+          "specs": [
+            "internal/cli/cli.go:1-2",
+            "internal/cli/cli.go:68-89"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 2,
+                "hash": "021a6218d1c89c4f8c9ff88544c32c51ad619f3d"
+              }
+            },
+            "internal/cli/cli.go:68-89": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 68,
+                "end": 89,
+                "hash": "1ea3ab311c4735874fbd55efcccc59fb0f7a207c"
+              }
+            }
+          }
+        },
+        "d3fd156932cc": {
+          "text": "`internal/registry` loads the registry with strict validation: unknown fields, a missing name, a bad `auth` value, a duplicate host or a service with none of...",
+          "line": 29,
+          "specs": [
+            "internal/registry/registry.go:62-65",
+            "internal/registry/registry.go:103-160"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/registry/registry.go": {
+              "path": "internal/registry/registry.go",
+              "blob": "a04bd20cf2a9599d626a81037b41c9c4d925e8fe",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 62,
+                "end": 65,
+                "hash": "2685f7565981ae5f98ce1d7a24a18d8150dda852"
+              }
+            },
+            "internal/registry/registry.go:103-160": {
+              "path": "internal/registry/registry.go",
+              "blob": "a04bd20cf2a9599d626a81037b41c9c4d925e8fe",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 103,
+                "end": 160,
+                "hash": "b6606f66baaa5f6eec50b7c3eb67d443b7561ad9"
+              }
+            }
+          }
+        },
+        "2a5bd9357c26": {
+          "text": "`internal/discover` holds one file per source behind a two-method `Source` interface: `cloudflared`, `caddy`, `nginx`, `docker`, `proc` and `systemd`. A sour...",
+          "line": 30,
+          "specs": [
+            "internal/discover/types.go:64-67",
+            "internal/discover/types.go:97-99",
+            "internal/discover/types.go:103-154"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/discover/types.go": {
+              "path": "internal/discover/types.go",
+              "blob": "65048ee6819be92a878ef7141fe2d732058a8f4b",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 64,
+                "end": 67,
+                "hash": "f8d4941eb68558c08e638b666b81c82a51bdb5f6"
+              }
+            },
+            "internal/discover/types.go:97-99": {
+              "path": "internal/discover/types.go",
+              "blob": "65048ee6819be92a878ef7141fe2d732058a8f4b",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 97,
+                "end": 99,
+                "hash": "a76df8259968bbbc022b4d4cbc2572a12fd43ebd"
+              }
+            },
+            "internal/discover/types.go:103-154": {
+              "path": "internal/discover/types.go",
+              "blob": "65048ee6819be92a878ef7141fe2d732058a8f4b",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 103,
+                "end": 154,
+                "hash": "f51f21ee9778bd2c0c42226df6fa44101a38034c"
+              }
+            }
+          }
+        },
+        "5b9d8415deb4": {
+          "text": "`internal/discover/origin.go` parses the spellings proxies use for a backend (`http://localhost:8080`, `:8080`, `[::1]:3000`, `unix:/run/x.sock`, `bastion`);...",
+          "line": 31,
+          "specs": [
+            "internal/discover/origin.go:39-42",
+            "internal/discover/origin.go:20-37"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/discover/origin.go": {
+              "path": "internal/discover/origin.go",
+              "blob": "72b4f48086245b9b394d506199fd5197eda599a4",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 39,
+                "end": 42,
+                "hash": "c98e68521c1f07218f2107c3c21920a28b97ff28"
+              }
+            },
+            "internal/discover/origin.go:20-37": {
+              "path": "internal/discover/origin.go",
+              "blob": "72b4f48086245b9b394d506199fd5197eda599a4",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 20,
+                "end": 37,
+                "hash": "eed7337a856f76790b40e085772325c8b5efde59"
+              }
+            }
+          }
+        },
+        "08b4df5e8843": {
+          "text": "`internal/check` merges hostnames from all sources into sites, then produces `UNREGISTERED`, `DEAD`, `NOAUTH`, `DRIFT` and `CERT` findings, sorted by type, t...",
+          "line": 32,
+          "specs": [
+            "internal/check/check.go:43-61",
+            "internal/check/check.go:499-518",
+            "internal/check/types.go:9-16"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/check/check.go": {
+              "path": "internal/check/check.go",
+              "blob": "bdfc834aa3dd9cca048be4b129822a590cc42ccd",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 43,
+                "end": 61,
+                "hash": "65ab08277c2944a6e341ed1aa2b19c1fea6d026e"
+              }
+            },
+            "internal/check/check.go:499-518": {
+              "path": "internal/check/check.go",
+              "blob": "bdfc834aa3dd9cca048be4b129822a590cc42ccd",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 499,
+                "end": 518,
+                "hash": "313dbc54f365d89d9972eebdb240b129cd44028a"
+              }
+            },
+            "internal/check/types.go": {
+              "path": "internal/check/types.go",
+              "blob": "73d457b8ddbed0a094a3fd4f0782578aec0a715d",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 9,
+                "end": 16,
+                "hash": "e7948052dd63320389e98123a78a47c140e550f8"
+              }
+            }
+          }
+        },
+        "33425ca95be7": {
+          "text": "`internal/probe` is the only network code: with `--probe` it sends an HTTPS `HEAD` (falling back to `GET` when HEAD gets 405 or 501) to registry hostnames, u...",
+          "line": 33,
+          "specs": [
+            "internal/probe/probe.go:1-4",
+            "internal/probe/probe.go:47-56",
+            "internal/probe/probe.go:110-114"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/probe/probe.go": {
+              "path": "internal/probe/probe.go",
+              "blob": "189a9e1d4b70a81bea15d95974486f21f93c687f",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 4,
+                "hash": "94471fe7ef34fd608d0a0b82e52129b6f49b34a9"
+              }
+            },
+            "internal/probe/probe.go:47-56": {
+              "path": "internal/probe/probe.go",
+              "blob": "189a9e1d4b70a81bea15d95974486f21f93c687f",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 47,
+                "end": 56,
+                "hash": "e3524ff3a01f8adf0c9a61492d5d186bdbee87df"
+              }
+            },
+            "internal/probe/probe.go:110-114": {
+              "path": "internal/probe/probe.go",
+              "blob": "189a9e1d4b70a81bea15d95974486f21f93c687f",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 110,
+                "end": 114,
+                "hash": "4cf29c2c8ff42610f9825290ae6dce8b7f37d565"
+              }
+            }
+          }
+        },
+        "5de19e992553": {
+          "text": "`internal/report` writes the text, JSON (schema `unlisted/v1`) and Markdown reports; colour follows `--no-color`, `NO_COLOR`, `CLICOLOR_FORCE`, `TERM=dumb`, ...",
+          "line": 34,
+          "specs": [
+            "internal/report/json.go:12-14",
+            "internal/report/markdown.go:12",
+            "internal/report/text.go:17",
+            "internal/report/style.go:12-30"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/report/json.go": {
+              "path": "internal/report/json.go",
+              "blob": "6e0e8fce5aa77d8cf91d1c7b94d993fc9f18e652",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 12,
+                "end": 14,
+                "hash": "bb4d411619b29ba28b07762d55487e8dacf7a3cd"
+              }
+            },
+            "internal/report/markdown.go": {
+              "path": "internal/report/markdown.go",
+              "blob": "20947daa293994ea228fec2936ecb3289f2d4811",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 12,
+                "end": 12,
+                "hash": "ad1638e2ac4339e59aa9ae01343faab20a91f379"
+              }
+            },
+            "internal/report/text.go": {
+              "path": "internal/report/text.go",
+              "blob": "6635a12c925fafbe9858eae780550e917928fdb8",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 17,
+                "end": 17,
+                "hash": "4e9f5e2573190c68e4680f0a6472dddecd356403"
+              }
+            },
+            "internal/report/style.go": {
+              "path": "internal/report/style.go",
+              "blob": "2748607c51b2ecb023868459abcb33124800a839",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 12,
+                "end": 30,
+                "hash": "7f4b73887e1c36a7863bda39708ff5aaa7bd0338"
+              }
+            }
+          }
+        },
+        "f52d77a20f88": {
+          "text": "`internal/adopt` builds the starter registry for `unlisted init` from a discovery snapshot.",
+          "line": 35,
+          "specs": [
+            "internal/adopt/adopt.go:1-4",
+            "internal/adopt/adopt.go:43"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/adopt/adopt.go": {
+              "path": "internal/adopt/adopt.go",
+              "blob": "3fd6646513277a2680a97fda7cc60e1507ae5b46",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 4,
+                "hash": "3a386af0e2e93f7d10fbb8307e9ab7c46d82eac5"
+              }
+            },
+            "internal/adopt/adopt.go:43-43": {
+              "path": "internal/adopt/adopt.go",
+              "blob": "3fd6646513277a2680a97fda7cc60e1507ae5b46",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 43,
+                "end": 43,
+                "hash": "41f0b301cdb18333e4d6c3f28a13543602b52852"
+              }
+            }
+          }
+        },
+        "d1f57421f059": {
+          "text": "`demo/` is a fake homelab in the `--config-root` layout, embedded in the binary; `internal/kit` holds tests only, no product code.",
+          "line": 36,
+          "specs": [
+            "demo/demo.go:1-10",
+            "internal/kit/kit_test.go:1-4"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "demo/demo.go": {
+              "path": "demo/demo.go",
+              "blob": "762d1f1708087058715f8d526a466a8a45a56410",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 1,
+                "end": 10,
+                "hash": "064fcb6f177b837d06d73943524ca9b7da146538"
+              }
+            },
+            "internal/kit/kit_test.go": {
+              "path": "internal/kit/kit_test.go",
+              "blob": "daa8dd8433ab8dc713d9429a6170c6f852bccb6a",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 4,
+                "hash": "c18c1b373f539261745cfaab01ce1f0b8e793746"
+              }
+            }
+          }
+        },
+        "462ba968502e": {
+          "text": "`scripts/` holds two dev-only Python helpers: one regenerates the fake `/proc` and Docker fixtures, one renders the demo output to a PNG.",
+          "line": 37,
+          "specs": [
+            "scripts/gen-demo-fixture.py:1-10",
+            "scripts/render-demo.py:1-10"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "scripts/gen-demo-fixture.py": {
+              "path": "scripts/gen-demo-fixture.py",
+              "blob": "496f72c70b572320b1c26dc91137f26148f221a1",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 1,
+                "end": 10,
+                "hash": "43a8382ec53b72eedec1a73bf625197890891090"
+              }
+            },
+            "scripts/render-demo.py": {
+              "path": "scripts/render-demo.py",
+              "blob": "4396bc4ab341d45fb680ef383d99610671e1b1e5",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 1,
+                "end": 10,
+                "hash": "1f7af633aef8965a6ba677123113f8b84e0347a9"
+              }
+            }
+          }
+        },
+        "3fec535affa4": {
+          "text": "`check` loads the registry, runs every source into one snapshot, optionally probes registry hostnames, builds the report, then writes it in the chosen format...",
+          "line": 41,
+          "specs": [
+            "internal/cli/cli.go:163-234"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 163,
+                "end": 234,
+                "hash": "b28989c72cbc06b929d886bcad5bfdd3269fc142"
+              }
+            }
+          }
+        },
+        "bf2fe5289b84": {
+          "text": "With no registry file and no `-f`, `check` runs against an empty registry and flags the report as having none; an explicit `-f` that does not exist is exit 2.",
+          "line": 42,
+          "specs": [
+            "internal/cli/cli.go:188-203"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 188,
+                "end": 203,
+                "hash": "fcd5d54adb6dd320bc8214d221ad0ab6683b546f"
+              }
+            }
+          }
+        },
+        "260262f51ffd": {
+          "text": "Discovery merges listeners by port and reachability, so one port bound on `0.0.0.0` and `::`, or seen by both `/proc` and Docker, is one row.",
+          "line": 43,
+          "specs": [
+            "internal/discover/types.go:156-191"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/discover/types.go": {
+              "path": "internal/discover/types.go",
+              "blob": "65048ee6819be92a878ef7141fe2d732058a8f4b",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 156,
+                "end": 191,
+                "hash": "9df8057379af1e192dcaa8ef217ff64b36ea4463"
+              }
+            }
+          }
+        },
+        "8a179b3b11fe": {
+          "text": "The checker indexes sites and ports, then runs in order: unregistered hosts, registered services (dead, noauth, drift), unregistered ports, certs, and the da...",
+          "line": 44,
+          "specs": [
+            "internal/check/check.go:43-61"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/check/check.go": {
+              "path": "internal/check/check.go",
+              "blob": "bdfc834aa3dd9cca048be4b129822a590cc42ccd",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 43,
+                "end": 61,
+                "hash": "65ab08277c2944a6e341ed1aa2b19c1fea6d026e"
+              }
+            }
+          }
+        },
+        "385e3e9fcabe": {
+          "text": "Exit is 1 only when a finding's type is in `--fail-on`; `--fail-on none` always exits 0.",
+          "line": 45,
+          "specs": [
+            "internal/cli/cli.go:217-220",
+            "internal/check/types.go:82-96"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 217,
+                "end": 220,
+                "hash": "4c39ee5649403bcfe14942abfc7425c08de56275"
+              }
+            },
+            "internal/check/types.go": {
+              "path": "internal/check/types.go",
+              "blob": "73d457b8ddbed0a094a3fd4f0782578aec0a715d",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 82,
+                "end": 96,
+                "hash": "b39343c5f9ec7f478823f53575a92988174c2e56"
+              }
+            }
+          }
+        },
+        "b0876a614c22": {
+          "text": "`init` runs the same discovery, builds the YAML in `adopt`, and writes it (or prints it with `-o -`); an existing target needs `--force`.",
+          "line": 46,
+          "specs": [
+            "internal/cli/cli.go:250-282"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 250,
+                "end": 282,
+                "hash": "56d71fa9cea1ce517894f13a22087bdac649964b"
+              }
+            }
+          }
+        },
+        "f651205ba6be": {
+          "text": "`demo` unpacks the embedded fixtures into a temp directory, runs `check` against it with `--fail-on none` and removes the directory afterwards.",
+          "line": 47,
+          "specs": [
+            "internal/cli/cli.go:135-160"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 135,
+                "end": 160,
+                "hash": "f9614bed226190369acbdbfea1b423c46f48d3a7"
+              }
+            }
+          }
+        },
+        "61465b011609": {
+          "text": "No database, cache or state between runs. It reads config files, `/proc` and the Docker socket, and the only file it writes is the `unlisted init` output (de...",
+          "line": 51,
+          "specs": [
+            "internal/cli/cli.go:254-273",
+            "SECURITY.md:11"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 254,
+                "end": 273,
+                "hash": "9d9c26fcc1dcb2ab8795b9a87759ad5521036b75"
+              }
+            },
+            "SECURITY.md": {
+              "path": "SECURITY.md",
+              "blob": "d0549dcefabc6321319a70e73a37599d73ffe98a",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 11,
+                "end": 11,
+                "hash": "294faaff3361a21ae6c3e03022ed3801ae4c6202"
+              }
+            }
+          }
+        },
+        "f76bf1fc5a44": {
+          "text": "`unlisted demo` writes a temp directory for the unpacked fixtures and removes it before returning.",
+          "line": 52,
+          "specs": [
+            "internal/cli/cli.go:136-140"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 136,
+                "end": 140,
+                "hash": "b799b1c5797e8405192f9bbf8b8aed832d79edbf"
+              }
+            }
+          }
+        },
+        "aeb88df9eaa8": {
+          "text": "Paths it reads by default: `/etc/cloudflared/config.yml` (and `.yaml`, and `~/.cloudflared/config.yml`), `/etc/caddy/Caddyfile`, `/etc/nginx`, `/var/run/dock...",
+          "line": 53,
+          "specs": [
+            "internal/discover/cloudflared.go:17-25",
+            "internal/discover/caddy.go:18",
+            "internal/discover/nginx.go:19",
+            "internal/discover/docker.go:51",
+            "internal/discover/proc.go:32-33",
+            "docs/reference.md:36-41"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/discover/cloudflared.go": {
+              "path": "internal/discover/cloudflared.go",
+              "blob": "f320d1ae815c060316981b24f780362318007d8f",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 17,
+                "end": 25,
+                "hash": "df7537cf4fbc3b91ad4d3a9f1421e4f3c49b58fd"
+              }
+            },
+            "internal/discover/caddy.go": {
+              "path": "internal/discover/caddy.go",
+              "blob": "8fc03024e9646483666fa193c0da2872eacbee6c",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 18,
+                "end": 18,
+                "hash": "a2ae0668e08c0c8629f33e177f0bd3646f2076fb"
+              }
+            },
+            "internal/discover/nginx.go": {
+              "path": "internal/discover/nginx.go",
+              "blob": "fbba368165afbf16c7538d697284be22818afb1d",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 19,
+                "end": 19,
+                "hash": "a538b83b9824ff1e5f362a7dc09c07a732f24fe4"
+              }
+            },
+            "internal/discover/docker.go": {
+              "path": "internal/discover/docker.go",
+              "blob": "7f22fabf37da0a388d552b9ce6ed9e7a7a7975b8",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 51,
+                "end": 51,
+                "hash": "2910138ab26a04382d6b07fbbd450e77c12fbd6c"
+              }
+            },
+            "internal/discover/proc.go": {
+              "path": "internal/discover/proc.go",
+              "blob": "68543ef05e5383c7ad68695775f130b6c9d9f7ad",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 32,
+                "end": 33,
+                "hash": "7cda54623f5ff57ded2df73c2a771aecc7865a82"
+              }
+            },
+            "docs/reference.md": {
+              "path": "docs/reference.md",
+              "blob": "1801d39fce2ce1c9e7184b2673bc050b13053891",
+              "commit": "43e353a727d3ee56c802553fca01de4cfde501f9",
+              "range": {
+                "start": 36,
+                "end": 41,
+                "hash": "0208f3defa1a2df9d61ce36a39b690c31f5306f4"
+              }
+            }
+          }
+        },
+        "1544f4d5c016": {
+          "text": "None. It is a local command line tool with no server, accounts or tokens.",
+          "line": 57,
+          "specs": [
+            "main.go:10-12",
+            "internal/cli/cli.go:68-89"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "main.go": {
+              "path": "main.go",
+              "blob": "662eda3223cffc78d4cb30c24618c7e370875448",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 10,
+                "end": 12,
+                "hash": "fd4b234454e46859a41114b5662665be61d0e86f"
+              }
+            },
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 68,
+                "end": 89,
+                "hash": "1ea3ab311c4735874fbd55efcccc59fb0f7a207c"
+              }
+            }
+          }
+        },
+        "f3c49e2faf5d": {
+          "text": "It reads whatever the running user can read. A Docker socket the user cannot open is reported as `permission denied (add the user to the docker group, or run...",
+          "line": 58,
+          "specs": [
+            "internal/discover/docker.go:56-57"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/discover/docker.go": {
+              "path": "internal/discover/docker.go",
+              "blob": "7f22fabf37da0a388d552b9ce6ed9e7a7a7975b8",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 56,
+                "end": 57,
+                "hash": "f888d35820112c678c6ceda27c1ae1e32e5b7ade"
+              }
+            }
+          }
+        },
+        "94d6696258d6": {
+          "text": "\"Auth\" in its findings is about the services it checks: a registry `auth:` value of `none`, `proxy`, `app` or `cloudflare-access`, compared with auth directi...",
+          "line": 59,
+          "specs": [
+            "internal/registry/registry.go:22-29",
+            "internal/probe/probe.go:145-162"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/registry/registry.go": {
+              "path": "internal/registry/registry.go",
+              "blob": "a04bd20cf2a9599d626a81037b41c9c4d925e8fe",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 22,
+                "end": 29,
+                "hash": "eb046fa6664220993862283dceb2a731c0c4e423"
+              }
+            },
+            "internal/probe/probe.go": {
+              "path": "internal/probe/probe.go",
+              "blob": "189a9e1d4b70a81bea15d95974486f21f93c687f",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 145,
+                "end": 162,
+                "hash": "834d6db785654acb3523ce7fa672345deb84eb38"
+              }
+            }
+          }
+        },
+        "841ddf90f9a9": {
+          "text": "The Docker Engine API over the local Unix socket (`GET /containers/json`, 3 second timeout), no network.",
+          "line": 63,
+          "specs": [
+            "internal/discover/docker.go:61-70"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/discover/docker.go": {
+              "path": "internal/discover/docker.go",
+              "blob": "7f22fabf37da0a388d552b9ce6ed9e7a7a7975b8",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 61,
+                "end": 70,
+                "hash": "783f7296999b6e7c41749f66bfc14cc3994bd207"
+              }
+            }
+          }
+        },
+        "180cbd912eb6": {
+          "text": "`systemctl list-units --type=service --state=running`, run with a 4 second timeout; skipped silently when `systemctl` is missing or fails.",
+          "line": 64,
+          "specs": [
+            "internal/discover/systemd.go:29-40"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/discover/systemd.go": {
+              "path": "internal/discover/systemd.go",
+              "blob": "b52f77c216dca6356a3f3a0bb0d5cbf677a5a8f9",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 29,
+                "end": 40,
+                "hash": "93206a8d70bb9dcbdd0cae76927ffb18b876e9d5"
+              }
+            }
+          }
+        },
+        "d51124d58516": {
+          "text": "With `--probe` only, HTTPS to each concrete registry hostname (wildcards and `ignore: true` entries are skipped). Nothing else is contacted.",
+          "line": 65,
+          "specs": [
+            "internal/cli/cli.go:236-248",
+            "internal/probe/probe.go:1-4"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 236,
+                "end": 248,
+                "hash": "8d348073c2eee6d825baa2d7052e2e30b6696dba"
+              }
+            },
+            "internal/probe/probe.go": {
+              "path": "internal/probe/probe.go",
+              "blob": "189a9e1d4b70a81bea15d95974486f21f93c687f",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 4,
+                "hash": "94471fe7ef34fd608d0a0b82e52129b6f49b34a9"
+              }
+            }
+          }
+        },
+        "1ab84e1819a3": {
+          "text": "Env vars it reads: `UNLISTED_ROOT` (same as `--config-root`), `NO_COLOR`, `CLICOLOR_FORCE`, `TERM`. No credentials.",
+          "line": 66,
+          "specs": [
+            "internal/cli/cli.go:107",
+            "internal/report/style.go:14-30"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 107,
+                "end": 107,
+                "hash": "f5679e4ef5b9f159204b0089b49d35d2fba1a07f"
+              }
+            },
+            "internal/report/style.go": {
+              "path": "internal/report/style.go",
+              "blob": "2748607c51b2ecb023868459abcb33124800a839",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 14,
+                "end": 30,
+                "hash": "1c0e4b2cd8aacdec22b85d1270b1ebfaca03fee3"
+              }
+            }
+          }
+        },
+        "3145a4c46ad0": {
+          "text": "Outside the binary: the `release` workflow runs GoReleaser on a `v*` tag, and `install.sh` and `action.yml` download `unlisted_<os>_<arch>.tar.gz` and `check...",
+          "line": 67,
+          "specs": [
+            ".github/workflows/release.yml:3-6",
+            "install.sh:34-47",
+            "action.yml:57-66"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            ".github/workflows/release.yml": {
+              "path": ".github/workflows/release.yml",
+              "blob": "8d98d331d6669ffe4cb9c231ac3ea669aed24bc0",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 3,
+                "end": 6,
+                "hash": "f286f260987620c36dc8f8477d59b55e00ea7f9f"
+              }
+            },
+            "install.sh": {
+              "path": "install.sh",
+              "blob": "c87d06fd9a2cdcf5b33a7b6351f3036a784907a2",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 34,
+                "end": 47,
+                "hash": "72698fe2f81d7631a9fd75a22f52ceb377c8d760"
+              }
+            },
+            "action.yml": {
+              "path": "action.yml",
+              "blob": "1d0ab8575f6e81dc9d9d0805758f2e4843858911",
+              "commit": "6fd8ed9832c07638e0c2daa873253565c1f65cea",
+              "range": {
+                "start": 57,
+                "end": 66,
+                "hash": "f180a4f6ac6ae753d2b6601e93efa883631eb4f5"
+              }
+            }
+          }
+        }
+      },
+      "pinnedAt": "2026-11-22T10:14:39.804Z",
+      "head": "f9a4a3c58966cc9de43e1957b99295d023780696"
+    },
+    "unlisted-brand": {
+      "claims": {
+        "ae76121fb3e5": {
+          "text": "The name is `unlisted`, all lowercase, in the README title, the usage text, every error prefix and the binary name.",
+          "line": 16,
+          "specs": [
+            "README.md:1",
+            "internal/cli/cli.go:35",
+            "internal/cli/cli.go:301"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 1,
+                "end": 1,
+                "hash": "0a1c8d37b4f015d617030ae2335430d62c2aaefe"
+              }
+            },
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 35,
+                "end": 35,
+                "hash": "20e3bfd50676853aba07126d6e9bf3fae9feba0a"
+              }
+            },
+            "internal/cli/cli.go:301-301": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 301,
+                "end": 301,
+                "hash": "b72add6963797d998200c252aef63c25a38b3715"
+              }
+            }
+          }
+        },
+        "f471469abb77": {
+          "text": "Prose keeps it lowercase, including at the start of a sentence, and sets it in code font where it names the command: \"`unlisted` answers one question\".",
+          "line": 17,
+          "specs": [
+            "docs/alternatives.md:3",
+            "SECURITY.md:11"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "docs/alternatives.md": {
+              "path": "docs/alternatives.md",
+              "blob": "b6308dbc4ede7527e90f5cb9af31a765b0ccfacc",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 3,
+                "end": 3,
+                "hash": "568c6053cd2e8c83cdbb645d40a2752c42fcd6d0"
+              }
+            },
+            "SECURITY.md": {
+              "path": "SECURITY.md",
+              "blob": "d0549dcefabc6321319a70e73a37599d73ffe98a",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 11,
+                "end": 11,
+                "hash": "294faaff3361a21ae6c3e03022ed3801ae4c6202"
+              }
+            }
+          }
+        },
+        "856fd6d0f33b": {
+          "text": "The GitHub Action is `unlisted-check`, because the Marketplace refuses a name that is also a GitHub account.",
+          "line": 18,
+          "specs": [
+            "action.yml:1",
+            "CHANGELOG.md:9-11"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "action.yml": {
+              "path": "action.yml",
+              "blob": "1d0ab8575f6e81dc9d9d0805758f2e4843858911",
+              "commit": "6fd8ed9832c07638e0c2daa873253565c1f65cea",
+              "range": {
+                "start": 1,
+                "end": 1,
+                "hash": "c7e4d052467f5613d86925bdcd0ed326a24c0aeb"
+              }
+            },
+            "CHANGELOG.md": {
+              "path": "CHANGELOG.md",
+              "blob": "f97ab2c79aaab50856cc09f24a780e4470b04ba6",
+              "commit": "0dfcede84ac895b465de445313a8e90f0bea571e",
+              "range": {
+                "start": 9,
+                "end": 11,
+                "hash": "3ece9ce702aa6f27774162980a4d4ff3b593426f"
+              }
+            }
+          }
+        },
+        "f89fbcb64a66": {
+          "text": "The owner handle shipped in the module path, licence and action author is `kd-011`.",
+          "line": 19,
+          "specs": [
+            "go.mod:1",
+            "LICENSE:3",
+            "action.yml:3"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "go.mod": {
+              "path": "go.mod",
+              "blob": "75424776b371a5188134470e0d1a398427b0b4bf",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 1,
+                "end": 1,
+                "hash": "8a9395b266243475813ad402dba286fc47548411"
+              }
+            },
+            "LICENSE": {
+              "path": "LICENSE",
+              "blob": "017a3dc11f5bd2f877b6dd3a9cb87eeadd26d5d8",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 3,
+                "end": 3,
+                "hash": "b160620a517f283595d95d4536e7afa3016f8491"
+              }
+            },
+            "action.yml": {
+              "path": "action.yml",
+              "blob": "1d0ab8575f6e81dc9d9d0805758f2e4843858911",
+              "commit": "6fd8ed9832c07638e0c2daa873253565c1f65cea",
+              "range": {
+                "start": 3,
+                "end": 3,
+                "hash": "7bdaafa0608a9ac2bc18ad2662368d4a43c1219b"
+              }
+            }
+          }
+        },
+        "5ac0dfa272c4": {
+          "text": "\"Compares the services you say you run with what your machine exposes through Cloudflare Tunnel, Caddy, nginx, Docker and listening ports, and lists where th...",
+          "line": 23,
+          "specs": [
+            "README.md:5"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 5,
+                "end": 5,
+                "hash": "4343c2cb9e6b386991af8ea9f4a4767e1af8c989"
+              }
+            }
+          }
+        },
+        "eee8a3c03192": {
+          "text": "The command's own usage line says it shorter: \"diff what you say you run against what is actually exposed.\"",
+          "line": 25,
+          "specs": [
+            "internal/cli/cli.go:35"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 35,
+                "end": 35,
+                "hash": "20e3bfd50676853aba07126d6e9bf3fae9feba0a"
+              }
+            }
+          }
+        },
+        "9de46c3f6945": {
+          "text": "People who run their own services at home or on a small server behind a tunnel or reverse proxy: the README speaks to \"your registry\", \"your Caddyfile and tu...",
+          "line": 29,
+          "specs": [
+            "README.md:5",
+            "README.md:52",
+            "docs/action.md:3"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 5,
+                "end": 5,
+                "hash": "4343c2cb9e6b386991af8ea9f4a4767e1af8c989"
+              }
+            },
+            "README.md:52-52": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 52,
+                "end": 52,
+                "hash": "73fce89d01fbeeb4fdd2bbf4f238023d590257ae"
+              }
+            },
+            "docs/action.md": {
+              "path": "docs/action.md",
+              "blob": "179eb9640183d6f78d91fbc03c891aa9f60e7829",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 3,
+                "end": 3,
+                "hash": "9e40222e427375fb4df7a7e53cfb3d6ce9796fd2"
+              }
+            }
+          }
+        },
+        "d9d8fb6ed175": {
+          "text": "It is a one-shot, read-only diff between a short YAML list and what the machine exposes.",
+          "line": 33,
+          "specs": [
+            "README.md:54",
+            "README.md:60"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 54,
+                "end": 54,
+                "hash": "a3cc89f7ca030724fa1d45c175f02a83cb5b9540"
+              }
+            },
+            "README.md:60-60": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 60,
+                "end": 60,
+                "hash": "8e7430d5b1141be015a04c08b79e0eadc9e42bd1"
+              }
+            }
+          }
+        },
+        "51ba42b04e55": {
+          "text": "It is one static Go binary with no network calls unless `--probe` is passed.",
+          "line": 34,
+          "specs": [
+            "README.md:54"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 54,
+                "end": 54,
+                "hash": "a3cc89f7ca030724fa1d45c175f02a83cb5b9540"
+              }
+            }
+          }
+        },
+        "0ab179c34f02": {
+          "text": "It is honest about what it cannot see: it says \"no auth detected\", never \"insecure\", and its report says which sources it could not read.",
+          "line": 35,
+          "specs": [
+            "README.md:36",
+            "README.md:28"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 36,
+                "end": 36,
+                "hash": "fa981dc85084313a5cfa00f848b777999777df83"
+              }
+            },
+            "README.md:28-28": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 28,
+                "end": 28,
+                "hash": "ec0703a43dac83bef6cbd96147a5e8514b32b4c7"
+              }
+            }
+          }
+        },
+        "4ff27c1b72c2": {
+          "text": "It is not a way to learn what is reachable from the internet; an outside scan answers that.",
+          "line": 36,
+          "specs": [
+            "README.md:58"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 58,
+                "end": 58,
+                "hash": "dcf56783e67bddf26a8e4051ca8e8dbef16592c4"
+              }
+            }
+          }
+        },
+        "5df952975da6": {
+          "text": "It is not continuous monitoring, and not for several machines at once.",
+          "line": 37,
+          "specs": [
+            "README.md:60-62"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 60,
+                "end": 62,
+                "hash": "29de625f6c71f89d2d58a634fd067dc289257df3"
+              }
+            }
+          }
+        },
+        "9371bd2c283e": {
+          "text": "Do: say what the tool cannot do before the reader finds out (\"When not to use it\" is a README section), give a number or a file and line, and name nearby too...",
+          "line": 43,
+          "specs": [
+            "README.md:56-64",
+            "docs/alternatives.md:3"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 56,
+                "end": 64,
+                "hash": "dee68b473ae71c2b175a9f5b644606c4958042b9"
+              }
+            },
+            "docs/alternatives.md": {
+              "path": "docs/alternatives.md",
+              "blob": "b6308dbc4ede7527e90f5cb9af31a765b0ccfacc",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 3,
+                "end": 3,
+                "hash": "568c6053cd2e8c83cdbb645d40a2752c42fcd6d0"
+              }
+            }
+          }
+        },
+        "a25c505322b1": {
+          "text": "Do: write in the second person and the active voice, with short sentences and the actual command.",
+          "line": 44,
+          "specs": [
+            "README.md:19-26"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 19,
+                "end": 26,
+                "hash": "037e07356896636d2de96530b1899ff7792c72d7"
+              }
+            }
+          }
+        },
+        "04979e9dcb9c": {
+          "text": "Do not: use emoji or em dashes in code, comments or docs.",
+          "line": 45,
+          "specs": [
+            "CONTRIBUTING.md:51"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "CONTRIBUTING.md": {
+              "path": "CONTRIBUTING.md",
+              "blob": "eafac68a70a187464bfca5472a16d43f7a105e97",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 51,
+                "end": 51,
+                "hash": "d6f3ef5b7614547d5b312386e6c59eee2b4c453b"
+              }
+            }
+          }
+        },
+        "a8423d71208d": {
+          "text": "Do not: claim a result it has not measured. \"I have not run them side by side on one machine, so this covers what each is for and says nothing about how they...",
+          "line": 46,
+          "specs": [
+            "docs/alternatives.md:3"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "docs/alternatives.md": {
+              "path": "docs/alternatives.md",
+              "blob": "b6308dbc4ede7527e90f5cb9af31a765b0ccfacc",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 3,
+                "end": 3,
+                "hash": "568c6053cd2e8c83cdbb645d40a2752c42fcd6d0"
+              }
+            }
+          }
+        },
+        "f4eea4ac14b2": {
+          "text": "Repo and README title: `# unlisted`, then a one-sentence description, then the demo image, then Install.",
+          "line": 51,
+          "specs": [
+            "README.md:1-11"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 1,
+                "end": 11,
+                "hash": "9e722dd05ed12645cdde93ca86f1bc1e966e2c0f"
+              }
+            }
+          }
+        },
+        "d5bf19656299": {
+          "text": "Section headings are plain nouns or phrases: \"Install\", \"Try it\", \"What it finds\", \"When not to use it\", \"Building\".",
+          "line": 52,
+          "specs": [
+            "README.md:11",
+            "README.md:19",
+            "README.md:30",
+            "README.md:56",
+            "README.md:66"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 11,
+                "end": 11,
+                "hash": "f3fb36a464b39957c3ece0a95960beca0b329366"
+              }
+            },
+            "README.md:19-19": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 19,
+                "end": 19,
+                "hash": "d88a0c1f24346127963afa6e1f3ddd62a6de2696"
+              }
+            },
+            "README.md:30-30": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 30,
+                "end": 30,
+                "hash": "8d0a7ab95917652abc16420cd992f2cb721a94e0"
+              }
+            },
+            "README.md:56-56": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 56,
+                "end": 56,
+                "hash": "b82275d994e18959f9cb508bfcd1c475fddaad22"
+              }
+            },
+            "README.md:66-66": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 66,
+                "end": 66,
+                "hash": "be9bfa1aaece7b39f26d6e55c17b5e0c7521ece0"
+              }
+            }
+          }
+        },
+        "bfc16756848d": {
+          "text": "Clean-run line: \"Nothing unlisted.\" with \"Everything exposed is in the registry, and everything in the registry is being served.\"",
+          "line": 53,
+          "specs": [
+            "internal/report/text.go:35-39"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/report/text.go": {
+              "path": "internal/report/text.go",
+              "blob": "6635a12c925fafbe9858eae780550e917928fdb8",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 35,
+                "end": 39,
+                "hash": "fb0c4d77ee71077fab1be1f3fd7723ef027f425f"
+              }
+            }
+          }
+        },
+        "fc86eff1651b": {
+          "text": "First run with no registry: \"No registry.yml here, so this lists everything the machine exposes. Run unlisted init to write a registry from it, then edit the...",
+          "line": 54,
+          "specs": [
+            "internal/check/check.go:26"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/check/check.go": {
+              "path": "internal/check/check.go",
+              "blob": "bdfc834aa3dd9cca048be4b129822a590cc42ccd",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 26,
+                "end": 26,
+                "hash": "ee5744b7b986c24eae41c2dffb944648991c24d7"
+              }
+            }
+          }
+        },
+        "2fb5216804ab": {
+          "text": "Error tone: say what is wrong and the next command, lowercase, prefixed `unlisted:`. \"registry.yml not found. Run 'unlisted init' to write a starter registry...",
+          "line": 55,
+          "specs": [
+            "internal/cli/cli.go:198",
+            "internal/cli/cli.go:301"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/cli/cli.go": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 198,
+                "end": 198,
+                "hash": "3a1eb563d733225d321ab6b3b54ece72ff83ecd4"
+              }
+            },
+            "internal/cli/cli.go:301-301": {
+              "path": "internal/cli/cli.go",
+              "blob": "a211b617c6d12a9b0ce9415e7fadc567d79f70b9",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 301,
+                "end": 301,
+                "hash": "b72add6963797d998200c252aef63c25a38b3715"
+              }
+            }
+          }
+        },
+        "a521d58390c4": {
+          "text": "Finding fix lines are imperatives: \"add it to the registry, or remove the tunnel ingress rule\".",
+          "line": 56,
+          "specs": [
+            "internal/check/check.go:189",
+            "docs/demo.txt:12"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "internal/check/check.go": {
+              "path": "internal/check/check.go",
+              "blob": "bdfc834aa3dd9cca048be4b129822a590cc42ccd",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 189,
+                "end": 189,
+                "hash": "7f91b354762d4c9e05e8fd1aaf098930a53e3474"
+              }
+            },
+            "docs/demo.txt": {
+              "path": "docs/demo.txt",
+              "blob": "16c75ce262f74b2b027b14419b3a42c87abdcdeb",
+              "commit": "aa0932749892940ef141b505bfc9896838b8aac9",
+              "range": {
+                "start": 12,
+                "end": 12,
+                "hash": "daf67e2ee89996f5ebb4821949a601d7b544f84f"
+              }
+            }
+          }
+        },
+        "f583b8ddf9f7": {
+          "text": "Action description: \"Compare the services in your registry with what your configs expose, and fail on the gaps.\"",
+          "line": 57,
+          "specs": [
+            "action.yml:2"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "action.yml": {
+              "path": "action.yml",
+              "blob": "1d0ab8575f6e81dc9d9d0805758f2e4843858911",
+              "commit": "6fd8ed9832c07638e0c2daa873253565c1f65cea",
+              "range": {
+                "start": 2,
+                "end": 2,
+                "hash": "78c538d544ae69fc099ed1da4c17de91910e5504"
+              }
+            }
+          }
+        },
+        "71d8771976f5": {
+          "text": "Issue template prompts: \"The config that was misread\", \"What happened\", \"What you expected\".",
+          "line": 58,
+          "specs": [
+            ".github/ISSUE_TEMPLATE/bug_report.yml:8-22"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            ".github/ISSUE_TEMPLATE/bug_report.yml": {
+              "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+              "blob": "4a8512e1d50618d9082748036ee41402aeae2d35",
+              "commit": "274cdc2168d7d80dc5519d3c64ccf844a13c00c2",
+              "range": {
+                "start": 8,
+                "end": 22,
+                "hash": "96022706ca7d1b73754448c646dbd9db4c2c4ab8"
+              }
+            }
+          }
+        },
+        "acb9d15a9ed8": {
+          "text": "OG text: none is set in the repo; the social preview is an image only.",
+          "line": 59,
+          "specs": [
+            ".github/social-preview.png"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            ".github/social-preview.png": {
+              "path": ".github/social-preview.png",
+              "blob": "d7073d7e2159a0f002b640580b22a518b5426d36",
+              "commit": "274cdc2168d7d80dc5519d3c64ccf844a13c00c2"
+            }
+          }
+        },
+        "f025135826e6": {
+          "text": "Social preview image, 1280 by 640 PNG: `.github/social-preview.png`.",
+          "line": 63,
+          "specs": [
+            ".github/social-preview.png",
+            "internal/kit/kit_test.go:399-409"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            ".github/social-preview.png": {
+              "path": ".github/social-preview.png",
+              "blob": "d7073d7e2159a0f002b640580b22a518b5426d36",
+              "commit": "274cdc2168d7d80dc5519d3c64ccf844a13c00c2"
+            },
+            "internal/kit/kit_test.go": {
+              "path": "internal/kit/kit_test.go",
+              "blob": "daa8dd8433ab8dc713d9429a6170c6f852bccb6a",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 399,
+                "end": 409,
+                "hash": "c122b006956547882a6278ec4d27708cca0f24de"
+              }
+            }
+          }
+        },
+        "580fd545f988": {
+          "text": "README hero image of the demo output: `docs/demo-hero.png`; full report image: `docs/demo.png`; text copy: `docs/demo.txt`.",
+          "line": 64,
+          "specs": [
+            "README.md:7-9",
+            "Makefile:28-33"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 7,
+                "end": 9,
+                "hash": "3089e44a488468ca0dc5baa927f108143d115953"
+              }
+            },
+            "Makefile": {
+              "path": "Makefile",
+              "blob": "e1a47e9aa169617ea47d59491c823bf138e86bdf",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84",
+              "range": {
+                "start": 28,
+                "end": 33,
+                "hash": "1bebdfd13d3d6eefae87a8738a4183aac37fab88"
+              }
+            }
+          }
+        },
+        "cf60dbdd52ae": {
+          "text": "Action Marketplace icon: Feather `eye-off`, colour `gray-dark`.",
+          "line": 65,
+          "specs": [
+            "action.yml:4-6"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "action.yml": {
+              "path": "action.yml",
+              "blob": "1d0ab8575f6e81dc9d9d0805758f2e4843858911",
+              "commit": "6fd8ed9832c07638e0c2daa873253565c1f65cea",
+              "range": {
+                "start": 4,
+                "end": 6,
+                "hash": "95e7e2db8edd5e035a2ab7344317649f045ffe0c"
+              }
+            }
+          }
+        },
+        "afc06ba8e271": {
+          "text": "No logo or favicon: there is no site, and none is in the repo.",
+          "line": 66,
+          "specs": [
+            "README.md",
+            ".github/social-preview.png"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84"
+            },
+            ".github/social-preview.png": {
+              "path": ".github/social-preview.png",
+              "blob": "d7073d7e2159a0f002b640580b22a518b5426d36",
+              "commit": "274cdc2168d7d80dc5519d3c64ccf844a13c00c2"
+            }
+          }
+        },
+        "c048b084bf46": {
+          "text": "Security and conduct reports go through GitHub private vulnerability reporting (\"Report a vulnerability\" on the Security tab); the project publishes no email...",
+          "line": 70,
+          "specs": [
+            "SECURITY.md:3-5",
+            "CODE_OF_CONDUCT.md:19",
+            ".github/ISSUE_TEMPLATE/config.yml:3-5"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "SECURITY.md": {
+              "path": "SECURITY.md",
+              "blob": "d0549dcefabc6321319a70e73a37599d73ffe98a",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 3,
+                "end": 5,
+                "hash": "e18b6d9fa756f564f8b71655333b52bc53277770"
+              }
+            },
+            "CODE_OF_CONDUCT.md": {
+              "path": "CODE_OF_CONDUCT.md",
+              "blob": "f835d73a351cd1dc0b7c957d0a953db034623ac3",
+              "commit": "274cdc2168d7d80dc5519d3c64ccf844a13c00c2",
+              "range": {
+                "start": 19,
+                "end": 19,
+                "hash": "df4b2e958936279970e56295bcc6f85a2cbd2019"
+              }
+            },
+            ".github/ISSUE_TEMPLATE/config.yml": {
+              "path": ".github/ISSUE_TEMPLATE/config.yml",
+              "blob": "0bca3028447832b511ad2d9abb6e197759f01b9c",
+              "commit": "274cdc2168d7d80dc5519d3c64ccf844a13c00c2",
+              "range": {
+                "start": 3,
+                "end": 5,
+                "hash": "766911eaa81fb78a6be008f248e31c5c739bb316"
+              }
+            }
+          }
+        },
+        "deacfb84074b": {
+          "text": "Bugs go to the repository's issues, with a sanitised config snippet.",
+          "line": 71,
+          "specs": [
+            "CONTRIBUTING.md:5-7"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "CONTRIBUTING.md": {
+              "path": "CONTRIBUTING.md",
+              "blob": "eafac68a70a187464bfca5472a16d43f7a105e97",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 5,
+                "end": 7,
+                "hash": "af5cd7cb046d7c78a67fcdf12cc005b903d24466"
+              }
+            }
+          }
+        },
+        "14f4419dce05": {
+          "text": "Licence: MIT, \"Copyright (c) 2026 kd-011\".",
+          "line": 72,
+          "specs": [
+            "LICENSE:1-3"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "LICENSE": {
+              "path": "LICENSE",
+              "blob": "017a3dc11f5bd2f877b6dd3a9cb87eeadd26d5d8",
+              "commit": "2feb1ae4d104bcb2cc9a4065aaf73597beef5caf",
+              "range": {
+                "start": 1,
+                "end": 3,
+                "hash": "9af6c2d48f70a7ddda6188f0d8e40553ada61bd7"
+              }
+            }
+          }
+        },
+        "f8553873b8ea": {
+          "text": "No privacy policy or terms page: it has no site or accounts.",
+          "line": 73,
+          "specs": [
+            "README.md",
+            "SECURITY.md:11"
+          ],
+          "head": "f9a4a3c58966cc9de43e1957b99295d023780696",
+          "files": {
+            "README.md": {
+              "path": "README.md",
+              "blob": "1201b77564ddd4d467bf84c7b0d1d8d11688c97e",
+              "commit": "6a65669cba8983ee49dcf2e713dee736594c3a84"
+            },
+            "SECURITY.md": {
+              "path": "SECURITY.md",
+              "blob": "d0549dcefabc6321319a70e73a37599d73ffe98a",
+              "commit": "48320eb0baabffc576400434274f9541b06415e6",
+              "range": {
+                "start": 11,
+                "end": 11,
+                "hash": "294faaff3361a21ae6c3e03022ed3801ae4c6202"
+              }
+            }
+          }
+        }
+      },
+      "pinnedAt": "2026-11-22T10:14:39.931Z",
+      "head": "f9a4a3c58966cc9de43e1957b99295d023780696"
     }
   }
 }
